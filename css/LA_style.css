@@ -113,3 +113,47 @@
     max-width: 100%;
     height: 100%;
 }
+
+/* ---------------------------------------------------------------*/
+/* ページ全体に関わるcssの設定 */
+body{
+    font-family: 'Noto Sans JP',sans-serif;
+    /* Note Sans JPのレギュラーウエイトを設定 */
+    font-weight: 400;
+}
+
+/* 主な太字タグの太字ウエイト設定 */
+h1,h2,h3,h4,h5,h6,th,strong{
+    font-weight: 700;
+}
+
+/* 親要素の幅に合わせて画像を伸縮させるスタイル */
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+/* 標準的なリンクのテキスト色 */
+a{
+    color: #fc7c26;
+}
+
+/* レスポンシブデザイン */
+html *, ::before, ::after{
+    box-sizing: border-box;
+}
+
+/* 標準的なフォントの種類とフォントサイズ */
+html{
+    font-size: 14px;
+}
+@media (min-width: 768px){
+    html{
+        font-size: 16px;
+    }
+}
+
+.section_wrapper{
+    margin-top: 10px;
+}
