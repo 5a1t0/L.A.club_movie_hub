@@ -220,9 +220,9 @@ html{
     }
 }
 
-/*.section_wrapper{
-    padding-top: 10px;
-}*/
+.section_wrapper{
+    margin-top: 15px;
+}
 .h1{
     font-size: large;
 }
