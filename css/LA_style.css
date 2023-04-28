@@ -1,0 +1,228 @@
+@charset "utf-8";
+
+.post{
+    background-color: black;
+    font-family: 'Cardo',serif;
+    color: #fc7c26;
+    min-height: 100%;
+    font-size: 75%;
+    font-weight: lighter;
+}
+
+/* ヘッダー -----------------------------------------------------*/
+/*.MainMenu{
+    position: relative;
+    background-position: 0% 0%; 
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}*/
+.container{
+    position: relative;
+    z-index: 0;
+}
+.header_background{
+    position: relative;
+    box-shadow: inset 0 -20px 5px black;    
+}
+.header_background img{
+    position: relative;
+    z-index: -1;
+    max-width: 100%;
+    height: auto;
+}
+.header_logo{
+    display: flex; 
+    margin-left: 20px;  
+}
+.header_logo .sub{
+    font-size: 20px;
+    padding : 0 0 0 30px;
+}
+
+/* メイン-------------------------------------------------------- */
+/* Pick Up Movie */ 
+.page .section_wrapper .grid{
+    display: grid;
+    grid-template: 
+        "link1 link2" 1fr
+        "link3 link4" 1fr
+        /1fr 1fr;
+}
+
+@media screen and (max-width:600px){
+.page .section_wrapper .grid{
+    display: block;
+    margin-bottom: 30px;
+}
+}
+    
+.link1{
+    grid-area: link1;
+}
+.link2{
+    grid-area: link2;
+}
+.link3{
+    grid-area: link3;
+}
+.link4{
+    grid-area: link4;
+}
+
+/* 下線ストライプ */
+.main .stripe{
+    position: relative;
+    background-image: repeating-linear-gradient(45deg, transparent 0 3px, #fc7c26 3px 6px);
+    background-repeat: no-repeat;
+    background-size: 100% 0.5rem;
+    background-position: bottom;
+    font-weight: bold;
+}
+.main .year h1 {
+    margin-bottom: 0;
+}
+.main .title h2{
+    margin: 7px 0;
+}
+.main h1 a{
+    color: aliceblue;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.main h2 p{
+    color: aliceblue;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: auto;
+    margin-left: 10px;
+}
+.main p{
+    color: aliceblue;
+    padding-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    text-align: end;
+}
+.yt_link{
+    display: flex;
+    text-decoration: none;
+}
+.live_info{
+    margin: 5px 30px;
+    border-bottom: 0.1px solid aliceblue;
+}
+/*2023/04/23追加*/
+.movie_info p{
+    text-align: center;
+}
+.topics_info h2 p{
+    margin: 0 0;
+    text-align: left;
+}
+.topics{
+    margin: 5px 30px;
+    border-top: 0.1px solid aliceblue;
+    border-bottom: 0.1px solid aliceblue;
+}
+.navwrapper .right_icon .contact_icon{
+    width: 100%;
+    text-align: right;
+    align-items: flex-end;
+    padding-right: 5%;
+}
+.navwrapper .contact_icon a{
+    color: #FFFFFF;
+    font-size: 23px;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.navwrapper .contact_icon a :hover{
+    color: rgb(160, 160, 160);
+}
+.update_date{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+}
+.update_date p{
+    color: aliceblue;
+    margin: 5px 0;
+}
+
+/* フッター-------------------------------------------------------- */
+.fotter{
+    background-position: 0% 100%; 
+    background-size: cover;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.fotter .license a{
+    font-size: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.footer_background{
+    position: relative;
+    box-shadow: inset 0 20px 20px black;    
+}
+.footer_background img{
+    position: relative;
+    z-index: -1;
+    max-width: 100%;
+    height: 100%;
+}
+
+/* ---------------------------------------------------------------*/
+/* ページ全体に関わるcssの設定 */
+body{
+    font-family: 'Noto Sans JP',sans-serif;
+    /* Note Sans JPのレギュラーウエイトを設定 */
+    font-weight: 400;
+}
+
+/* 主な太字タグの太字ウエイト設定 */
+h1,h2,h3,h4,h5,h6,th,strong{
+    font-weight: 700;
+}
+
+/* 親要素の幅に合わせて画像を伸縮させるスタイル */
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+/* 標準的なリンクのテキスト色 */
+a{
+    color: #fc7c26;
+}
+
+/* レスポンシブデザイン */
+html *, ::before, ::after{
+    box-sizing: border-box;
+}
+
+/* 標準的なフォントの種類とフォントサイズ */
+html{
+    font-size: 14px;
+}
+@media (min-width: 768px){
+    html{
+        font-size: 16px;
+    }
+}
+
+/*.section_wrapper{
+    padding-top: 10px;
+}*/
+.h1{
+    font-size: large;
+}
