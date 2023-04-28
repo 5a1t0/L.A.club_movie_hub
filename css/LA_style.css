@@ -147,7 +147,7 @@
 .update_date{
     display: flex;
     justify-content: flex-end;
-    padding-right: 10%;
+    padding-right: 7%;
 }
 .update_date p{
     color: aliceblue;
@@ -221,7 +221,7 @@ html{
 }
 
 .section_wrapper{
-    margin-top: 15px;
+    margin-top: 25px;
 }
 .h1{
     font-size: large;
